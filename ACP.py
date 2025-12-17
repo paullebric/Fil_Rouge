@@ -3,9 +3,9 @@ import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
-
+datas = "Data/table.tsv"
 # Charger la table
-df = pd.read_csv("table.tsv", sep="\t", comment="#", index_col=0)
+df = pd.read_csv(datas, sep="\t", comment="#", index_col=0)
 
 # Transposer → samples x features
 df = df.T
